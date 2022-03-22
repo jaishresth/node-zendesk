@@ -1,5 +1,5 @@
 exports.auth = {
   username: 'example@zendesk.com',
-  token: '',
-  remoteUri: 'https://example.zendesk.com/api/v2'
+  token: 'token-api',
+  remoteUri: 'https://subdomain.zendesk.com/api/v2'
 };
