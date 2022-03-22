@@ -1,10 +1,9 @@
-var exampleConfig = require('./exampleConfig');
-var zd = require('../lib/client');
+var zendesk = require('node-zendesk');
 
-var client = zd.createClient({
-  username:  exampleConfig.auth.username,
-  token:     exampleConfig.auth.token,
-  remoteUri: exampleConfig.auth.remoteUri
+var client = zendesk.createClient({
+  username:  'email-id',
+  token:     'api-token',
+  remoteUri: 'https://subdomain.zendesk.com/api/v2'
 });
 
 var ticket = {
